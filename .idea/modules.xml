@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/TINGESO-POR.iml" filepath="$PROJECT_DIR$/.idea/TINGESO-POR.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-service/config-service.iml" filepath="$PROJECT_DIR$/config-service/config-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/entrada-service/entrada-service.iml" filepath="$PROJECT_DIR$/entrada-service/entrada-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gateway-service/gateway-service.iml" filepath="$PROJECT_DIR$/gateway-service/gateway-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/resumen-service/resumen-service.iml" filepath="$PROJECT_DIR$/resumen-service/resumen-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/salida-service/salida-service.iml" filepath="$PROJECT_DIR$/salida-service/salida-service.iml" />
+    </modules>
+  </component>
+</project>
