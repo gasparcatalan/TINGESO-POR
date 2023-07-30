@@ -26,8 +26,8 @@
       <module name="config-service" options="-parameters" />
       <module name="entrada-service" options="-parameters --add-modules java.base" />
       <module name="gateway-service" options="-parameters" />
-      <module name="resumen-service" options="-parameters" />
-      <module name="salida-service" options="-parameters" />
+      <module name="resumen-service" options="-parameters --add-modules java.base" />
+      <module name="salida-service" options="-parameters --add-modules java.base" />
     </option>
   </component>
 </project>

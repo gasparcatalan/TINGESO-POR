@@ -1,6 +1,6 @@
 package salidaservice.salidaservice.Entities;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.*;
 
 import java.util.Date;

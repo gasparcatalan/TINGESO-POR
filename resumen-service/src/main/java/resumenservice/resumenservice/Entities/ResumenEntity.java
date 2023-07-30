@@ -1,6 +1,6 @@
 package resumenservice.resumenservice.Entities;
 
-import jakarta.persistence.*;
+import javax.persistence.*;
 import lombok.*;
 import resumenservice.resumenservice.Models.Entrada;
 
