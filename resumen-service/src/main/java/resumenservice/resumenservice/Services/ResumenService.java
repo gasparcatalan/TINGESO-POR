@@ -54,6 +54,7 @@ public class ResumenService {
 
     public void generarResumenes(Date inicial, Date fin) {
         List<Transaccion> transacciones = new ArrayList<>();
+        resumenRepository.deleteAll();
 
         // Obtener y filtrar entradas por fecha
         for (Entrada entrada : obtenerEntradas()) {

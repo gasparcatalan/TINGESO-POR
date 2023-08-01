@@ -1,6 +1,7 @@
 package resumenservice.resumenservice.Controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import resumenservice.resumenservice.Entities.ResumenEntity;
@@ -28,8 +29,8 @@ public class ResumenController {
     }
 
     @PostMapping("/generar")
-    public String generarResumenes(@RequestParam("fechaInicial") Date fechaInicial,
-                                   @RequestParam("fechaFinal") Date fechaFinal) {
+    public String generarResumenes(@RequestParam("fechaInicial") @DateTimeFormat(pattern="yyyy-MM-dd") Date fechaInicial,
+                                   @RequestParam("fechaFinal") @DateTimeFormat(pattern="yyyy-MM-dd") Date fechaFinal) {
         try {
             resumenService.generarResumenes(fechaInicial, fechaFinal);
             return "Resumenes generados exitosamente";

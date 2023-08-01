@@ -12,8 +12,7 @@ import java.util.Date;
 @AllArgsConstructor
 public class EntradaEntity {
     @Id
-    @NonNull
-    @GeneratedValue(strategy = GenerationType.TABLE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     //Num Doc

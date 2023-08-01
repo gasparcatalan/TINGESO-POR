@@ -12,8 +12,7 @@ import java.util.Date;
 @AllArgsConstructor
 public class SalidaEntity {
     @Id
-    @NonNull
-    @GeneratedValue(strategy = GenerationType.TABLE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     //numero de documento

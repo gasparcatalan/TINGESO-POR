@@ -11,7 +11,4 @@ import java.util.List;
 @Repository
 public interface SalidaRepository extends CrudRepository<SalidaEntity, Long> {
 
-
-    @Query("SELECT s FROM SalidaEntity s ")
-    List<SalidaEntity> getAll();
 }

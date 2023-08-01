@@ -1,0 +1,10 @@
+INSERT INTO salida (num_doc, tipo, monto, motivo, tipo_doc, fecha) VALUES ('DOC11', 'Salida', 10, 'Motivo11', 'Boleta', STR_TO_DATE('2023-06-25', '%Y-%m-%d'));
+INSERT INTO salida (num_doc, tipo, monto, motivo, tipo_doc, fecha) VALUES ('DOC12', 'Salida', 20, 'Motivo12', 'Factura', STR_TO_DATE('2023-06-26', '%Y-%m-%d'));
+INSERT INTO salida (num_doc, tipo, monto, motivo, tipo_doc, fecha) VALUES ('DOC13', 'Salida', 30, 'Motivo13', 'Boleta', STR_TO_DATE('2023-06-27', '%Y-%m-%d'));
+INSERT INTO salida (num_doc, tipo, monto, motivo, tipo_doc, fecha) VALUES ('DOC14', 'Salida', 40, 'Motivo14', 'Factura', STR_TO_DATE('2023-06-28', '%Y-%m-%d'));
+INSERT INTO salida (num_doc, tipo, monto, motivo, tipo_doc, fecha) VALUES ('DOC15', 'Salida', 50, 'Motivo15', 'Boleta', STR_TO_DATE('2023-06-30', '%Y-%m-%d'));
+INSERT INTO salida (num_doc, tipo, monto, motivo, tipo_doc, fecha) VALUES ('DOC16', 'Salida', 60, 'Motivo16', 'Factura', STR_TO_DATE('2023-07-01', '%Y-%m-%d'));
+INSERT INTO salida (num_doc, tipo, monto, motivo, tipo_doc, fecha) VALUES ('DOC17', 'Salida', 70, 'Motivo17', 'Boleta', STR_TO_DATE('2023-07-02', '%Y-%m-%d'));
+INSERT INTO salida (num_doc, tipo, monto, motivo, tipo_doc, fecha) VALUES ('DOC18', 'Salida', 80, 'Motivo18', 'Factura', STR_TO_DATE('2023-07-03', '%Y-%m-%d'));
+INSERT INTO salida (num_doc, tipo, monto, motivo, tipo_doc, fecha) VALUES ('DOC19', 'Salida', 90, 'Motivo19', 'Boleta', STR_TO_DATE('2023-07-04', '%Y-%m-%d'));
+INSERT INTO salida (num_doc, tipo, monto, motivo, tipo_doc, fecha) VALUES ('DOC20', 'Salida', 1000, 'Motivo20', 'Factura', STR_TO_DATE('2023-07-05', '%Y-%m-%d'));
