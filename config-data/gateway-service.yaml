@@ -15,7 +15,7 @@ spring:
             allow-credentials: true
       routes:
         - id: entrada-service
-          uri: http://entrada-service
+          uri: http://entrada-service:8082
           predicates:
             - Path=/entrada/**
         - id: salida-service
