@@ -19,10 +19,10 @@ spring:
           predicates:
             - Path=/entrada/**
         - id: salida-service
-          uri: http://salida-service
+          uri: http://salida-service:8083
           predicates:
             - Path=/salida/**
         - id: resumen-service
-          uri: http://resumen-service
+          uri: http://resumen-service:8084
           predicates:
             - Path=/resumen/**
