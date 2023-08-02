@@ -15,14 +15,14 @@ spring:
             allow-credentials: true
       routes:
         - id: entrada-service
-          uri: http://localhost:8082
+          uri: http://entrada-service
           predicates:
             - Path=/entrada/**
         - id: salida-service
-          uri: http://localhost:8083 
+          uri: http://salida-service
           predicates:
             - Path=/salida/**
         - id: resumen-service
-          uri: http://localhost:8084
+          uri: http://resumen-service
           predicates:
             - Path=/resumen/**

@@ -1,0 +1,30 @@
+.background {
+  background-image: url('/epic.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  justify-content: center;
+  padding-top: 100px; /* Añade espacio en la parte superior */
+}
+
+.labelContainer {
+  background-image: url('/company.png'); /* Imagen de fondo */
+  background-size: cover; /* Cubrir todo el contenedor */
+  background-position: center; /* Centrar la imagen */
+  padding: 10px; /* Espacio alrededor del texto */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+.epicLabel {
+  font-size: 5rem; /* Tamaño de fuente grande */
+  font-family: 'HansHand', cursive; /* Fuente HansHand */
+  text-align: center; /* Centrar texto horizontalmente */
+  color: #ffe600; /* Color del texto */
+  font-weight: bold; /* Negrita */
+  font-style: italic; /* Inclinada */
+}
+

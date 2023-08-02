@@ -1,0 +1,60 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: resumen-deployment
+  labels:
+    app: resumen-deployment
+spec:
+  selector:
+    matchLabels:
+      app: resumen-deployment
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: resumen-deployment
+    spec:
+      containers:
+        - name: resumen
+          image: gaspitas241/resumen
+          ports:
+            - containerPort: 8081
+          env:
+            - name: SPRING_CLOUD_CONFIG_URI
+              value: http://config-service:8081
+            - name: SPRING_DATASOURCE_URL
+              value: "jdbc:mysql://${DB_HOST}:3306/${DB_NAME}?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true"
+            - name: DB_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: mysql-config
+                  key: host
+            - name: DB_NAME
+              valueFrom:
+                configMapKeyRef:
+                  name: mysql-config
+                  key: name
+            - name: DB_USERNAME
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-root-credentials
+                  key: username
+            - name: DB_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: mysql-root-credentials
+                  key: password
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: resumen-service
+  labels:
+    app: resumen-service
+spec:
+  selector:
+    app: resumen-deployment
+  ports:
+    - protocol: TCP
+      port: 8084
+      targetPort: 8084
